@@ -71,6 +71,10 @@ class Matrix(size: Int) {
     }
 
     fun strassenMultiply(other: Matrix):Matrix? {
+        val leafSize = 1024
+        if (n <= leafSize) {
+            return multiply(other)
+        }
         if (n == 1) {
             val result = Matrix(1)
             result[0, 0] = this[0, 0] * other[0, 0]
@@ -149,7 +153,7 @@ class Matrix(size: Int) {
 }
 
 fun main() {
-    for (i in 10 until 15) {
+    for (i in 0 until 15) {
         val base = 2.0
         val n = base.pow(i).toInt()
         val m = Matrix(n)
