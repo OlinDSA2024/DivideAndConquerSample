@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fe06dc7-a58e-4fa8-9628-f4ea04ccd9c2" name="Changes" comment="Reference implementation of Smith-Waterman">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Genome.kt" afterDir="false" />
+    <list default="true" id="1fe06dc7-a58e-4fa8-9628-f4ea04ccd9c2" name="Changes" comment="A matching fragment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SmithWaterman.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/SmithWaterman.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/SmithWatermanTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/SmithWatermanTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Genome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Genome.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +184,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709230325912</updated>
-      <workItem from="1709230327593" duration="19207000" />
+      <workItem from="1709230327593" duration="19404000" />
     </task>
     <task id="LOCAL-00001" summary="Initial version of divide and conquer">
       <option name="closed" value="true" />
@@ -212,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709396898017</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="A matching fragment">
+      <option name="closed" value="true" />
+      <created>1709398674005</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709398674005</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +229,7 @@
     <MESSAGE value="Improved performance of straseen" />
     <MESSAGE value="Improved performance of strassen" />
     <MESSAGE value="Reference implementation of Smith-Waterman" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reference implementation of Smith-Waterman" />
+    <MESSAGE value="A matching fragment" />
+    <option name="LAST_COMMIT_MESSAGE" value="A matching fragment" />
   </component>
 </project>
