@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fe06dc7-a58e-4fa8-9628-f4ea04ccd9c2" name="Changes" comment="Initial version of divide and conquer">
+    <list default="true" id="1fe06dc7-a58e-4fa8-9628-f4ea04ccd9c2" name="Changes" comment="Improved performance of strassen">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/SmithWaterman.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/SmithWatermanTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Matrix.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Matrix.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +18,14 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,10 +42,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build DivideAndConquerSample.executor": "Run",
+    "Gradle.SmithWatermanTest.aBitHarder.executor": "Run",
+    "Gradle.SmithWatermanTest.basic.executor": "Run",
     "Kotlin.MatrixKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -50,7 +63,63 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.SmithWatermanTest.aBitHarder">
+    <configuration name="SmithWatermanTest.aBitHarder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;SmithWatermanTest.aBitHarder&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SmithWatermanTest.basic" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;SmithWatermanTest.basic&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="MatrixKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MatrixKt" />
       <module name="DivideAndConquerSample.main" />
@@ -60,6 +129,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SmithWatermanTest.aBitHarder" />
+        <item itemvalue="Gradle.SmithWatermanTest.basic" />
         <item itemvalue="Kotlin.MatrixKt" />
       </list>
     </recent_temporary>
@@ -79,7 +150,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709230325912</updated>
-      <workItem from="1709230327593" duration="13399000" />
+      <workItem from="1709230327593" duration="17443000" />
     </task>
     <task id="LOCAL-00001" summary="Initial version of divide and conquer">
       <option name="closed" value="true" />
@@ -89,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709233859830</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Improved performance of strassen">
+      <option name="closed" value="true" />
+      <created>1709392773417</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709392773417</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +176,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial version of divide and conquer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial version of divide and conquer" />
+    <MESSAGE value="Improved performance of straseen" />
+    <MESSAGE value="Improved performance of strassen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved performance of strassen" />
   </component>
 </project>
