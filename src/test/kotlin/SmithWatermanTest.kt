@@ -15,4 +15,11 @@ class SmithWatermanTest {
         // Test case from https://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm#Example
         assertEquals(aligner.align("TACGGGCCCGCTAC", "TAGCCCTATCGGTCA"),"TACGGGCCCGCTA-C\nTA-G--CCC--TATC")
     }
+
+    @Test
+    fun covid() {
+        val aligner = SmithWaterman(1.0, 5.0, 4.0)
+        // Test case from https://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm#Example
+        assertEquals(aligner.align(targetGenome, targetGenome),"$targetGenome\n$targetGenome")
+    }
 }

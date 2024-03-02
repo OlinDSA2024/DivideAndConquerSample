@@ -76,7 +76,12 @@ class SmithWaterman(
     fun formatAlignment(s1Alignment: MutableList<Char>,
                         s2Alignment: MutableList<Char>): String {
         val alignment = "${s1Alignment.reversed().joinToString("")}\n${s2Alignment.reversed().joinToString("")}"
-        print(alignment)
         return alignment
     }
+}
+
+fun main() {
+    val aligner = SmithWaterman(5.0, 5.0, 4.0)
+    // Test case from https://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm#Example
+    println(aligner.align(targetGenome, testAgainst))
 }
